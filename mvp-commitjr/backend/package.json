@@ -1,0 +1,38 @@
+{
+  "name": "mpv-commit",
+  "version": "1.0.0",
+  "description": "Projeto para a Commit Jr",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.ts",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victorluizskt/mpv-commitjr.git"
+  },
+  "author": "victor luiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorluizskt/mpv-commitjr/issues"
+  },
+  "homepage": "https://github.com/victorluizskt/mpv-commitjr#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.9",
+    "@types/request": "^2.48.5",
+    "axios": "^0.21.1",
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "nodemon": "^2.0.7",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.4"
+  }
+}

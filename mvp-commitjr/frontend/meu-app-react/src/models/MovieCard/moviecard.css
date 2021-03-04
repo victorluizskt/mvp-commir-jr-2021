@@ -1,0 +1,66 @@
+.container-movie {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(196, 196, 196, 1);
+    margin: auto;
+    width: fit-content;
+    padding: 60px;
+    border-radius:10;
+}
+
+.movie-info {
+    margin-left: 20px;
+}
+
+.movie-title {
+    font-size: 28px;
+}
+
+.movie-synopsis {
+    font-size: 15px;
+    overflow: auto;
+    height: 100px;
+    margin: 11px 0px 0px 0px;
+}
+
+.movie-title-original {
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+}
+
+.movie-genre {
+    font-size: 15px;
+    margin: 6px 0px 0px 0px;
+}
+
+.movie-debut {
+    font-size: 15px;
+    margin: 6px 0px 0px 0px;
+}
+
+.movie-content-adult {
+    font-size: 15px;
+    margin: 6px 0px 0px 0px;
+}
+
+.movie-duration {
+    font-size: 15px;
+    margin: -17px 0px 0px 250px;
+}
+
+.movie-avaliation {
+    font-size: 17px;
+    margin: 27px 0px 0px 0px;
+}
+
+.movie-button {
+    margin: -120px 0px 0px 600px;
+}
+
+.avaliation {
+    margin: -21px 0px 0px 90px;
+    width: 20px;
+    height: 20px;
+}
+  
+/* width: auto, padding 60px, border-radius: 10px,  */

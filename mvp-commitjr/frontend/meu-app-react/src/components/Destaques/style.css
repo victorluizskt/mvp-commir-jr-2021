@@ -1,0 +1,38 @@
+.secao-destaques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(221, 221, 221, 1);
+}
+
+.secao-destaques {
+    margin: -5px 0;
+    font-size: 140%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: -15px 0px 0px 0px;
+    align-items: center;
+}
+
+.category-film {
+    margin: 20px 0px 0px 0px;
+    background-color:rgba(221, 221, 221, 1);
+    width: 190px;
+    height: inherit;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.button-load {
+    margin: 80px 0px 40px 0px;
+    border-radius: 5px;
+}
+
+.title {
+    text-decoration: underline;
+    margin: 40px 0px 20px 0px;
+}

@@ -1,0 +1,40 @@
+.header-initial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(164, 164, 164, 1);
+    height: 80px;
+    padding: 0 60px;
+}
+
+.menu-links {
+    font-size: 30px;
+    margin-left: 5vw;
+}
+
+.search-input {
+    margin: 0px -40px 0px 0px;
+    padding: 6px;
+    font-size: 17px;
+    display: inline !important;
+    background-color: rgba(164, 164, 164, 1);
+    border-radius: 6px;
+    border: 1px #FFF;
+    border-style: solid;
+    width: 120px;
+    height: 20px;
+    background-image:url(search.svg);
+    background-repeat:no-repeat; 
+}
+
+.container {
+    width:100%;
+    position: relative;
+    height: 50px;
+  }
+
+::-webkit-input-placeholder {
+    color: #fff;
+    text-align: center;
+ }
