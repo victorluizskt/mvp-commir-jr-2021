@@ -8,8 +8,7 @@ function Lancamentos() {
     const [generos, setGeneros] = useState([]);
 
     async function getGenres() {
-        const genres = await getGenre(878);
-        console.log(genres.data);
+        const genres = await getGenre(35);
         setGeneros(genres.data);
     }
 

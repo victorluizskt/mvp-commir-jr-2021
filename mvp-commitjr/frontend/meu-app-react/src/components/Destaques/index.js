@@ -1,6 +1,6 @@
 import './style.css'
 import MovieList from '../../models/MovieList/index'
-import React, {useState, useEffect, useCallback} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -93,7 +93,6 @@ function Lancamentos() {
                     value={genero}
                     onChange={handleSetGenero}
                     >
-
                     {generos.map((genero) => (
                         <MenuItem value={genero.id}>
                             {genero.name}

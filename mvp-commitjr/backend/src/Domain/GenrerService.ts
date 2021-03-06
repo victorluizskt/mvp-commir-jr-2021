@@ -17,7 +17,7 @@ function show (response: any){
     let movieList: object[] = [];
     for(let i = 0; i < response.data['genres'].length; i++){
         movieList.push({id: response.data['genres'][i].id,
-            name: response.data['genres'][i].name});
+        name: response.data['genres'][i].name});
     };
     return movieList
 }

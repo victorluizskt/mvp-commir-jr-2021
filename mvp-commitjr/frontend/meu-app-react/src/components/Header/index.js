@@ -13,7 +13,7 @@ function Header() {
                 <span> Highlights </span>
             </div>
 
-            <input type="text" placeholder="Search" className="search-input"></input>
+            <input type="text" placeholder="       Search" className="search-input"></input>
        </header>
     );
 }

@@ -39,19 +39,22 @@ const ImageSlider = ({slides}) => {
                     <div className={index === currente ? 'slide active' : 'slide'} key={index}>
                         {index === currente && 
                         (<>
-                        <img src={`https://image.tmdb.org/t/p/w500${slide.backdrop_path}`} alt='travel image' className="image"/>
+                        <div className="image" >
+                            <iframe width="500px" height="335" src={`https://www.youtube.com/embed/${slide.keyVideo}`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
                             <div className="releases-texts"> 
                                 <h1>{slide.title}</h1>
                                 <span className="movie-synopsis" ><strong>Sinopse:</strong> {slide.overview}</span>
                                 <span className="movie-title-original"><strong>Original title: </strong> {slide.original_title} </span>
                                 <span className="movie-title-original"><strong>Genres:</strong> {slide.genre_ids}</span>
                                 <span className="movie-title-original"><strong>Release:</strong> {slide.release_date}</span>
-                                <span className="movie-title-original"><strong>Conteudo adulto:</strong> {slide.adult ? "Não" : "Sim"}</span>
+                                <span className="movie-title-original"><strong>Adult content:</strong> {slide.adult ? "No" : "Yes"}</span>
+                                <span className="runtime"><strong>Runtime: </strong>{`${parseInt(slide.runtime / 60)}h ${slide.runtime % 60}min`}</span>
                                 <span className="movie-title-original"><strong>Avaliation:</strong></span>
                                 <span className="avaliation">
                                     <Box component="fieldset" mb={3} borderColor="transparent">
                                         <Typography component="legend"></Typography>
-                                        <Rating  value={5} readOnly />
+                                        <Rating  value={slide.vote_average / 2} readOnly />
                                     </Box> 
                                 </span>
                             </div>
