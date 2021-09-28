@@ -1,11 +1,11 @@
 import {getGenresList} from '../Repository/Repository';
 
 // Class responsible for taking all genres of films available on the platform.
-class GenrerService {
+class GenreService {
     async getMovieList(){
-        const respositoryResponse = await getGenresList();
-        if(respositoryResponse.status){
-            return show(respositoryResponse);
+        const repositoryResponse = await getGenresList();
+        if(repositoryResponse.status){
+            return show(repositoryResponse);
         };
 
         return {message: 'Failed to make the request.'};
@@ -22,4 +22,4 @@ function show (response: any){
     return movieList
 }
 
-export default GenrerService;
+export default GenreService;

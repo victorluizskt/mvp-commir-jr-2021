@@ -1,13 +1,11 @@
-import {getMovieGenre, getMovieDetails, getKey} from '../Repository/Repository';
+import { getMovieGenre, getMovieDetails, getKey } from '../Repository/Repository';
 
 class GenreMovieService {
     async getGenreList(genre:string) {
-        const respositoryResponse = await getMovieGenre(genre);
-
-        if(respositoryResponse.status){
-            return show(respositoryResponse);
+        const repositoryResponse = await getMovieGenre(genre);
+        if(repositoryResponse.status){
+            return show(repositoryResponse);
         };
-
         return {message: 'Failed to make the request.'};
     };
 };
@@ -42,21 +40,17 @@ async function show(response:any) {
         vote_average: `${response.data['results'][i].vote_average}`,
         runtime: `${valor['runtime']}`});
     };
-    
-
     return listGender;
-
-}
+};
 
 async function getDetails(id:number){
-    const respositoryResponse = await getMovieDetails(id);
-
-    return respositoryResponse.data;
-}
+    const repositoryResponse = await getMovieDetails(id);
+    return repositoryResponse.data;
+};
 
 async function getVideo(id:number){
-    const respositoryResponse = await getKey(id);
-    return respositoryResponse.data;
-}
+    const repositoryResponse = await getKey(id);
+    return repositoryResponse.data;
+};
 
 export default GenreMovieService;

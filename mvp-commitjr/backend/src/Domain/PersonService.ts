@@ -1,4 +1,4 @@
-import {getPersonId} from '../Repository/Repository';
+import { getPersonId } from '../Repository/Repository';
 
 interface Person {
     name: string;
@@ -12,29 +12,28 @@ interface Person {
 // -> Show only the information useful to the user.
 class PersonService {
     async getPersonId(id:number) {
-        const respositoryResponse = await getPersonId(id);
-        if(respositoryResponse.status){
+        const repositoryResponse = await getPersonId(id);
+        if(repositoryResponse.status){
             return show({
-                name:  respositoryResponse.data['name'],
-                age: respositoryResponse.data['age'],
-                birthday: respositoryResponse.data['birthday'],
-                biography: respositoryResponse.data['biography'],
-                profile_path: respositoryResponse.data['profile_path']
+                name:  repositoryResponse.data['name'],
+                age: repositoryResponse.data['age'],
+                birthday: repositoryResponse.data['birthday'],
+                biography: repositoryResponse.data['biography'],
+                profile_path: repositoryResponse.data['profile_path'],
             });
         };
-
         return {message: 'Failed to make the request.'};
     };
 };
 
 function show({name, age, birthday, biography, profile_path}: Person) {
-    const dadosProfile = 
-    {name: name, 
-    age: age,
-    birthday: birthday,
-    biography: biography,
-    profile_path: profile_path};
-
+    const dadosProfile = {
+        name: name, 
+        age: age,
+        birthday: birthday,
+        biography: biography,
+        profile_path: profile_path,
+    };
     return dadosProfile;
 }
 

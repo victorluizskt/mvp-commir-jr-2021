@@ -1,0 +1,8 @@
+Initial project backend
+
+Install node.js -> server for javascript
+Install yarn -> control packages in js
+yarn add express -> utilizing for the server node.js
+yarn add nodemon -> auto reload for server node.js
+yarn add @types/express -D -> javascript with typing
+yarn tsc --init -> generate file tsconfig.json

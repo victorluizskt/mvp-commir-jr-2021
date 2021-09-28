@@ -1,5 +1,0 @@
-Proximos passos:
-    1. Criar a rota getMovieGenre, juntamente a todas suas funções Repository -> MoviesService -> api.ts
-    2. Tratar todos os dados na classe MoviesService, que recebo do Respository.
-    3. Documentar melhor o código, refatorar algumas coisas.
-    4. Estudar muito TS e Node juntamente ao Express.

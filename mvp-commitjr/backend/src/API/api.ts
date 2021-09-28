@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import PersonService from '../Domain/PersonService';
-import GenrerService from '../Domain/GenrerService';
+import GenreService from '../Domain/GenreService';
 import GenreMovieService from '../Domain/GenrerFilmService';
 
 
@@ -21,10 +21,10 @@ class PersonController {
     };
 };
 
-class GenrerListController {
+class GenreListController {
     async getMovieList (req:Request, res:Response) {
         try {
-            const data = new GenrerService();
+            const data = new GenreService();
             const movieList = await data.getMovieList();
             if(movieList != null) {
                 return res.send(movieList);
@@ -54,7 +54,7 @@ class GenreMovieController {
     };
 };
 
-export {PersonController, GenrerListController, GenreMovieController};
+export {PersonController, GenreListController, GenreMovieController};
 
 /**
  * Class where all data arrives, in a previously treated manner, being sent to the front-end, 

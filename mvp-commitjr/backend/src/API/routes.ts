@@ -1,9 +1,9 @@
-import {Router} from 'express';
+import { Router } from 'express';
 const router = Router();
-import {PersonController, GenrerListController, GenreMovieController} from '../API/api';
+import { PersonController, GenreListController, GenreMovieController } from '../API/api';
 
 const personService = new PersonController();
-const movieList = new GenrerListController();
+const movieList = new GenreListController();
 const genreMovie = new GenreMovieController();
 
 // First param -> Route, second param -> Function to be performed.
